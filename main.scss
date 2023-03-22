@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&family=Poppins:wght@300&family=Roboto&display=swap');
+
+@use "./variables.scss";
+
+* {
+    padding: 0;
+    margin: 10px;
+    background-color: $color-third;
+}
+
+body {
+    font-family: $font-primary;
+    height: 4093px;
+    width: 1728px;
+}
+
+nav {
+    padding: 10px;
+
+
+}
+
+footer {
+    height: 155px;
+    width: auto;
+    color: $color-third;
+    background-color: $color-primary;
+}
+
+
+/*
+@media screen and (min-width: 330px){
+
+}
+
+@media screen and (min-width: 768px) {
+
+}
+*/
