@@ -1,24 +1,147 @@
+@use "./_variables.scss" as *;
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&family=Poppins:wght@300&family=Roboto&display=swap');
 
-@use "./variables.scss";
+
 
 * {
-    padding: 0;
     margin: 10px;
     background-color: $color-third;
+    box-sizing: border-box;
 }
 
-body {
+.navbar {
     font-family: $font-primary;
-    height: 4093px;
-    width: 1728px;
+    display: flex;
+    height: 50px;
+    width: 100%;
+    
+    .navbar__name {
+        font-size: 1rem;
+        font-weight: bold;
+    }
+
+    /*a {
+        display: inline;
+    }
+    */
+
+    .navbar__right {
+        margin-left: 650px;
+    }
+
+    .navbar__button {
+        border: solid 2px grey;
+        border-radius: 2px;
+        text-align: center;
+        width: 100px;
+        margin-left: 700px;
+    }
+
+
 }
 
-nav {
-    padding: 10px;
+.greeting {
+    font-size: 1.5rem;
+    font-family: $font-secondary;
+    padding-top: 100px;
+    margin-left: 60px;
+
+}
+
+.header {
+    padding: 30px;
+    font-family: $font-secondary;
+    display: flex;
+    
+    .header__intro {
+        padding-top: 50px;
+        padding-right: 20px;
+        font-size: 3.5rem;
+        font-family: $font-primary;
+        justify-content: center;
+        align-items: center;
+    }
+    .header__picture {
+        margin-left: auto;
+        width: 400px;
+        height: 400px;
+        justify-content: center;
+        align-items: center;
+    
+    }
+
+}
+
+.container {
+    font-family: $font-secondary;
+    color: $color-primary;
+    display: flex;
+    flex-direction: column;
+}
+
+.aboutme {
+    display: flex;
+
+    .aboutme__picture {
+        height: 400px;
+        width: 218px;
+        margin-right: auto;
+     
+
+    }
+
+    .aboutme__text {
+        width: 350px;
+        height: 420px;
+
+        .aboutme__heading {
+            font-size: 2rem;
+            font-family: $font-primary;
+            align-items: flex-start;
+     
+        }
+    
+        .aboutme__paragraph {
+            padding-top: 30px;
+            font-size: 1rem;
+        
+        }
+
+    }         
+    
+
+}
+
+.skills {
+    text-align: center;
+    justify-content: center;
+    padding-top: 200px;
+
+    .skills__heading {
+        font-size: 2.5rem;
+        font-family: $font-primary;
+    }
+    .skills__paragraph {
+        font-size: 1rem;
+    }
+    /*.skills__images {
+        justify-self: ;
+        
+
+    }
+    */
 
 
 }
+
+
+.project-heading {
+    text-align: center;
+    justify-content: center;
+    font-size: 2.5rem;
+    padding: 100px;
+}
+
 
 footer {
     height: 155px;
