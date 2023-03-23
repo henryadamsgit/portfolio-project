@@ -1,0 +1,57 @@
+@use "./variables.scss";
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&family=Poppins:wght@300&family=Roboto&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 10px;
+    background-color: #E5E5E5;
+    box-sizing: border-box;
+}
+
+body {
+    height: 4093px;
+    width: 1728px;
+}
+
+.navbar {
+    padding: 10px;
+    font-family: $font-primary;
+    display: flex;
+    
+    .navbar__name {
+        font-size: 1rem;
+        justify-content: flex-start;
+    }
+
+    .navbar__right {
+        position: absolute, 0, 0;
+        justify-content: flex-end;
+    }
+
+    .navbar__button {
+        border: solid 2px grey;
+
+    }
+
+
+}
+
+footer {
+    height: 155px;
+    width: auto;
+    color: $color-third;
+    background-color: $color-primary;
+}
+
+
+/*
+@media screen and (min-width: 330px){
+
+}
+
+@media screen and (min-width: 768px) {
+
+}
+*/
