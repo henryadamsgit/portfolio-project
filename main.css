@@ -1,48 +1,43 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&family=Poppins:wght@300&family=Roboto&display=swap");
 * {
   margin: 10px;
-  background-color: #E5E5E5;
+  background-color: #fcfcfc;
   box-sizing: border-box;
 }
 
 .navbar {
   font-family: "Roboto";
   display: flex;
+  justify-content: space-between;
   height: 50px;
   width: 100%;
-  /*a {
-      display: inline;
-  }
-  */
 }
 .navbar .navbar__name {
   font-size: 1rem;
   font-weight: bold;
 }
-.navbar .navbar__right {
-  margin-left: 650px;
-}
-.navbar .navbar__button {
-  border: solid 2px grey;
+.navbar .navbar__right .navbar__get-in-touch {
+  border: solid 2px #ff0028;
   border-radius: 2px;
-  text-align: center;
-  width: 100px;
-  margin-left: 700px;
+  padding: 10px;
 }
 
 .greeting {
   font-size: 1.5rem;
   font-family: "Open Sans";
+  color: #ff0028;
   padding-top: 100px;
   margin-left: 60px;
 }
 
 .header {
+  color: #ff0028;
   padding: 30px;
   font-family: "Open Sans";
   display: flex;
 }
 .header .header__intro {
+  color: #ff0028;
   padding-top: 50px;
   padding-right: 20px;
   font-size: 3.5rem;
@@ -76,8 +71,10 @@
 .aboutme .aboutme__text {
   width: 350px;
   height: 420px;
+  margin-right: 150px;
 }
 .aboutme .aboutme__text .aboutme__heading {
+  color: #ff0028;
   font-size: 2rem;
   font-family: "Roboto";
   align-items: flex-start;
@@ -90,13 +87,7 @@
 .skills {
   text-align: center;
   justify-content: center;
-  padding-top: 200px;
-  /*.skills__images {
-      justify-self: ;
-
-
-  }
-  */
+  padding-top: 100px;
 }
 .skills .skills__heading {
   font-size: 2.5rem;
@@ -107,21 +98,65 @@
 }
 
 .project-heading {
+  color: #ff0028;
   text-align: center;
   justify-content: center;
   font-size: 2.5rem;
-  padding: 100px;
+  padding-top: 100px;
 }
 
-footer {
-  height: 155px;
-  width: auto;
-  color: #E5E5E5;
+.card {
+  display: grid;
+  grid-template-columns: 3;
+  grid-template-rows: 2;
+  gap: 10px;
+}
+.card .card__img01 {
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+.card .card__img02 {
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+.card .card__img03 {
+  grid-column: 3/4;
+  grid-row: 1/2;
+}
+.card .card__img04 {
+  grid-column: 1/2;
+  grid-row: 2/3;
+}
+.card .card__img05 {
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+.card .card__img06 {
+  grid-column: 3/4;
+  grid-row: 2/3;
+}
+
+.footer {
+  height: 80px;
+  width: 100%;
   background-color: #000000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer .footer_email {
+  color: #fcfcfc;
+  font-size: 1rem;
+  opacity: 0.7;
+}
+.footer .footer__icons {
+  height: 50px;
+  width: 50px;
+  border-radius: 30px;
 }
 
 /*
-@media screen and (min-width: 330px){
+@media screen and (min-width: 320px){
 
 }
 
