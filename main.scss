@@ -9,201 +9,197 @@
     box-sizing: border-box;
 }
 
-.navbar {
-    font-family: $font-primary;
-    display: flex;
-    justify-content: space-between;
-    height: 50px;
-    width: 100%;
-    
-    .navbar__name {
-        font-size: 1rem;
-        font-weight: bold;
-    }
-
-    .navbar__right {
-    
-
-        .navbar__get-in-touch {
-        border: solid 2px $color-secondary;
-        border-radius: 2px;
-        padding: 10px;
-        }
-    }
-} 
-
-.greeting {
-    font-size: 1.5rem;
-    font-family: $font-secondary;
-    color: $color-secondary;
-    padding-top: 100px;
-    margin-left: 60px;
-
-}
-
-.header {
-    color: $color-secondary;
-    padding: 30px;
-    font-family: $font-secondary;
-    display: flex;
-    
-    .header__intro {
-        color: $color-secondary;
-        padding-top: 50px;
-        padding-right: 20px;
-        font-size: 3.5rem;
-        font-family: $font-primary;
-        justify-content: center;
-        align-items: center;
-    }
-    .header__picture {
-        margin-left: auto;
-        width: 400px;
-        height: 400px;
-        justify-content: center;
-        align-items: center;
-    
-    }
-
-}
-
-.container {
-    font-family: $font-secondary;
-    color: $color-primary;
-    display: flex;
-    flex-direction: column;
-}
-
-.aboutme {
-    display: flex;
-
-    .aboutme__picture {
-        height: 400px;
-        width: 218px;
-        margin-right: auto;
-
-    }
-
-    .aboutme__text {
-        width: 350px;
-        height: 420px;
-        margin-right: 150px;
-
-        .aboutme__heading {
-            color: $color-secondary;
-            font-size: 2rem;
-            font-family: $font-primary;
-            align-items: flex-start;
-     
-        }
-    
-        .aboutme__paragraph {
-            padding-top: 30px;
-            font-size: 1rem;
-        
-        }
-
-    }         
-    
-
-}
-
-.skills {
-    text-align: center;
-    justify-content: center;
-    padding-top: 100px;
-
-    .skills__heading {
-        font-size: 2.5rem;
-        font-family: $font-primary;
-    }
-    .skills__paragraph {
-        font-size: 1rem;
-    }
-}
 
 
-.project-heading {
-    color: $color-secondary;
-    text-align: center;
-    justify-content: center;
-    font-size: 2.5rem;
-    padding-top: 100px;
-}
-
-.card {
-    display: grid;
-    grid-template-columns: 3;
-    grid-template-rows: 2;
-    gap: 10px;
-
-
-    .card__img01 {
-        grid-column: 1/2;
-        grid-row: 1/2;
-    }
-
-    .card__img02 {
-        grid-column: 2/3;
-        grid-row: 1/2;
-        
-    }
-    .card__img03 {
-        grid-column: 3/4;
-        grid-row: 1/2;
-        
-    }
-    .card__img04 {
-        grid-column: 1/2;
-        grid-row: 2/3;
-    }
-    .card__img05 {
-        grid-column: 2/3;
-        grid-row: 2/3;
-        
-    }
-    .card__img06 {
-        grid-column: 3/4;
-        grid-row: 2/3;
-        
-    }
-
-
-
-
-
-}
-
-
-.footer {
-    height: 80px;
-    width: 100%;
-    background-color: $color-primary;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    .footer_email {
-        color: $color-third;
-        font-size: 1rem;
-        opacity: 0.7;
-    }
-
-    .footer__icons {
-        height: 50px;
-        width: 50px;
-        border-radius: 30px;
-    }
-
-}
-
-
-/*
 @media screen and (min-width: 320px){
 
+    .navbar {
+        font-family: $font-primary;
+        display: flex;
+        justify-content: space-between;
+        height: 50px;
+        width: 100%;
+        
+        .navbar__name {
+            font-size: 1rem;
+            font-weight: bold;
+        }
+
+        .navbar__right {
+        
+
+            .navbar__get-in-touch {
+            border: solid 2px $color-secondary;
+            border-radius: 2px;
+            padding: 10px;
+            }
+        }
+    } 
+
+    .greeting {
+        font-size: 1.5rem;
+        font-family: $font-secondary;
+        color: $color-secondary;
+        padding-top: 100px;
+        margin-left: 60px;
+
+    }
+
+    .header {
+        color: $color-secondary;
+        padding: 30px;
+        font-family: $font-secondary;
+        display: flex;
+        
+        .header__intro {
+            color: $color-secondary;
+            padding-top: 50px;
+            padding-right: 20px;
+            font-size: 3.5rem;
+            font-family: $font-primary;
+            justify-content: center;
+            align-items: center;
+        }
+        .header__picture {
+            margin-left: auto;
+            width: 400px;
+            height: 400px;
+            justify-content: center;
+            align-items: center;
+        
+        }
+
+    }
+
+    .container {
+        font-family: $font-secondary;
+        color: $color-primary;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .aboutme {
+        display: flex;
+
+        .aboutme__picture {
+            height: 400px;
+            width: 218px;
+            margin-right: auto;
+
+        }
+
+        .aboutme__text {
+            width: 350px;
+            height: 420px;
+            margin-right: 150px;
+
+            .aboutme__heading {
+                color: $color-secondary;
+                font-size: 2rem;
+                font-family: $font-primary;
+                align-items: flex-start;
+        
+            }
+        
+            .aboutme__paragraph {
+                padding-top: 30px;
+                font-size: 1rem;
+            
+            }
+
+        }         
+        
+
+    }
+
+    .skills {
+        text-align: center;
+        justify-content: center;
+        padding-top: 100px;
+
+        .skills__heading {
+            font-size: 2.5rem;
+            font-family: $font-primary;
+        }
+        .skills__paragraph {
+            font-size: 1rem;
+        }
+    }
+
+
+    .project-heading {
+        color: $color-secondary;
+        text-align: center;
+        justify-content: center;
+        font-size: 2.5rem;
+        padding-top: 100px;
+    }
+
+    .card {
+        display: grid;
+        grid-template-columns: 3;
+        grid-template-rows: 2;
+        gap: 10px;
+
+
+        .card__img01 {
+            grid-column: 1/2;
+            grid-row: 1/2;
+        }
+
+        .card__img02 {
+            grid-column: 2/3;
+            grid-row: 1/2;
+            
+        }
+        .card__img03 {
+            grid-column: 3/4;
+            grid-row: 1/2;
+            
+        }
+        .card__img04 {
+            grid-column: 1/2;
+            grid-row: 2/3;
+        }
+        .card__img05 {
+            grid-column: 2/3;
+            grid-row: 2/3;
+            
+        }
+        .card__img06 {
+            grid-column: 3/4;
+            grid-row: 2/3;
+            
+        }
+
+
+
+
+
+    }
+
+
+    .footer {
+        height: 80px;
+        width: 100%;
+        background-color: $color-primary;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .footer_email {
+            color: $color-third;
+            font-size: 1rem;
+            opacity: 0.7;
+        }
+
+        .footer__icons {
+            height: 50px;
+            width: 50px;
+            border-radius: 30px;
+        }
+
+    }
 }
 
-@media screen and (min-width: 768px) {
 
-}
-*/
