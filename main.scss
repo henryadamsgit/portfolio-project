@@ -154,26 +154,39 @@
 .footer {
     height: 80px;
     width: 100%;
+    font-size: 12px;
     background-color: $color-primary;
     display: flex;
     justify-content: space-between;
     align-items: center;
 
-    &__email {
+    p.footer__email {
         background-color: $color-primary;
         color: $color-third;
         font-size: 0.75rem;
-        opacity: 0.7;
+        opacity: 0.8;
         
     }
 
     div {
+        background-color: $color-primary;
+
         .footer__icons {
-            height: 10px;
-            width: 10px;
-            border-radius: 50px;
+            height: 15px;
+            width: 15px;
+            border-radius: 30px;
+
+        }
     }
+
+    p.footer__bottom {
+        background-color: $color-primary;
+        color: $color-third;
+        font-size: 0.75rem;
+        opacity: 0.8;
+        width: 60px;
     }
+
     
 
 }

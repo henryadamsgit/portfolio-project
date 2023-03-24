@@ -125,21 +125,32 @@
 .footer {
   height: 80px;
   width: 100%;
+  font-size: 12px;
   background-color: #000000;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.footer__email {
+.footer p.footer__email {
   background-color: #000000;
   color: #fcfcfc;
   font-size: 0.75rem;
-  opacity: 0.7;
+  opacity: 0.8;
+}
+.footer div {
+  background-color: #000000;
 }
 .footer div .footer__icons {
-  height: 10px;
-  width: 10px;
-  border-radius: 50px;
+  height: 15px;
+  width: 15px;
+  border-radius: 30px;
+}
+.footer p.footer__bottom {
+  background-color: #000000;
+  color: #fcfcfc;
+  font-size: 0.75rem;
+  opacity: 0.8;
+  width: 60px;
 }
 
 /*
