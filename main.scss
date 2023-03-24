@@ -140,13 +140,57 @@
 }
 
 .projects {
-    font-size: 1.5rem;
     color: $color-primary;
     padding-top: 60px;
     padding-bottom: 30px;
 
+    h4 {
+        font-family: $font-secondary;
+        font-size: 1.5rem;
+        color: $color-secondary;
+        padding-top: 60px;
+        text-align: center;
+
+    }
+
     .card {
         margin-bottom: 30px;
+        
+        &__img {
+            width: 100%;
+            height: auto;
+            padding-bottom: 40px;
+        }
+
+        &__text {
+            line-height: 25px;
+            margin-top: 5px;
+
+            &--top {
+                font-size: 1rem;
+                font-weight: bold;
+            }
+                
+        }
+
+        &__heading {
+            margin-top: 20px;
+            font-size: 1.5rem;
+            color: $color-secondary;
+        }
+
+        &__buttons {
+            display: flex;
+            justify-content: space-around;
+
+        }
+
+        &__button {
+            text-decoration: none;
+            background-color: $color-third;
+            width: 100px;
+            height: 30px;
+        }
     }
 
 
@@ -157,21 +201,7 @@
 
 
 /*
-    .card {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(6, 1fr);
     
-        width: 100%;
-        max-height: 100%;
-    
-        .card__img {
-            width: 100%;
-            padding-bottom: 40px;
-    
-        }
-        
-    }
 
 */
 
