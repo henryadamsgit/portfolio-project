@@ -4,12 +4,185 @@
 
 
 * {
-    margin: 10px;
     background-color: $color-third;
     box-sizing: border-box;
 }
 
+.navbar {
+    display:none;
 
+}
+
+.greeting {
+    font-size: 1.5rem;
+    font-family: $font-primary;
+    font-weight: bolder;
+    text-decoration: wavy;
+    color: $color-secondary;
+    padding-left: 20px;
+    padding-top: 50px;
+}
+
+.header {
+    display: flex;
+
+
+    .header__intro {
+        color: $color-secondary;
+        font-family: $font-secondary;
+        font-size: 2.5rem;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    .header__picture {
+        display: none;
+    }
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    color: $color-primary;
+    font-family: $font-secondary;
+
+    .aboutme {
+
+        .aboutme__heading {
+            font-size: 1.5rem;
+            color: $color-secondary;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding-right: 10px;
+        }
+
+        .aboutme__picture {
+
+            img {
+                max-width: 100%; height: auto;
+                padding-bottom: 40px;
+            }
+
+        }
+        .aboutme_paragraph {
+                font-family: $font-primary;
+
+        }
+        
+
+
+
+    }
+}
+
+.skills {
+    text-align: center;
+        
+    .skills__heading {
+        font-family: $font-secondary;
+        font-size: 1.5rem;
+        color: $color-secondary;
+        padding-top: 40px;
+
+    }
+
+    .skills__paragraph {
+        font-size: 1rem;
+        padding-top: 10px;
+    }
+
+    .skills__images {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+
+        .skills__image01 {
+            grid-area: 1/1/2/2;
+        }
+        .skills__image02 {
+            grid-area: 1/2/2/3;
+        }
+        .skills__image03 {
+            grid-area: 1/3/2/4;
+        }
+        .skills__image04 {
+            grid-area: 2/1/3/2;
+        }
+        .skills__image05 {
+            grid-area: 2/2/3/3;
+        }
+        .skills__image06 {
+            grid-area: 2/3/3/4;
+        }
+        .skills__image07 {
+            grid-area: 3/1/4/2;
+        }
+        .skills__image08 {
+            grid-area: 3/2/4/3;
+        }
+        .skills__image09 {
+            grid-area: 3/3/4/4;
+        }
+    }
+}
+
+.project-heading {
+    font-size: 1.5rem;
+    color: $color-secondary;
+    text-align: center;
+}
+
+.card {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 1fr);
+
+    width: 100%;
+    max-height: 100%;
+
+    .card__img {
+        width: 100%;
+        padding-bottom: 40px;
+
+    }
+    
+}
+
+.footer {
+    height: 80px;
+    width: 100%;
+    background-color: $color-primary;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__email {
+        background-color: $color-primary;
+        color: $color-third;
+        font-size: 0.75rem;
+        opacity: 0.7;
+        
+    }
+
+    div {
+        .footer__icons {
+            height: 10px;
+            width: 10px;
+            border-radius: 50px;
+    }
+    }
+    
+
+}
+
+
+
+
+
+/*
 
 @media screen and (min-width: 320px){
 
@@ -75,54 +248,51 @@
         font-family: $font-secondary;
         color: $color-primary;
         display: flex;
-        flex-direction: column;
-    }
+    
 
-    .aboutme {
-        display: flex;
+        .aboutme {
 
-        .aboutme__picture {
+            .aboutme__picture {
             height: 400px;
             width: 218px;
             margin-right: auto;
 
-        }
+        
 
-        .aboutme__text {
-            width: 350px;
-            height: 420px;
-            margin-right: 150px;
+            .aboutme__text {
+                width: 350px;
+                height: 420px;
+                margin-right: 150px;
 
+            }
             .aboutme__heading {
                 color: $color-secondary;
                 font-size: 2rem;
                 font-family: $font-primary;
                 align-items: flex-start;
-        
             }
-        
             .aboutme__paragraph {
                 padding-top: 30px;
                 font-size: 1rem;
-            
             }
 
         }         
         
 
-    }
+    
 
-    .skills {
-        text-align: center;
-        justify-content: center;
-        padding-top: 100px;
+        .skills {
+            text-align: center;
+            justify-content: center;
+            padding-top: 100px;
 
-        .skills__heading {
-            font-size: 2.5rem;
-            font-family: $font-primary;
-        }
-        .skills__paragraph {
-            font-size: 1rem;
+            .skills__heading {
+                font-size: 2.5rem;
+                font-family: $font-primary;
+            }
+            .skills__paragraph {
+                font-size: 1rem;
+            }
         }
     }
 
@@ -184,22 +354,32 @@
         width: 100%;
         background-color: $color-primary;
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
         align-items: center;
 
-        .footer_email {
+        &__email {
+            background-color: $color-primary;
             color: $color-third;
-            font-size: 1rem;
+            font-size: 1.5rem;
             opacity: 0.7;
+            
         }
 
-        .footer__icons {
-            height: 50px;
-            width: 50px;
-            border-radius: 30px;
+        div {
+            .footer__icons {
+                height: 50px;
+                width: 50px;
+                border-radius: 40px;
         }
+        }
+
+
+    
+
+       
 
     }
 }
+*/
 
 
