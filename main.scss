@@ -102,6 +102,8 @@
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         gap: 10px;
+        padding-left: 25px;
+
 
         .skills__image01 {
             grid-area: 1/1/2/2;
@@ -145,6 +147,11 @@
         padding-top: 60px;
         text-align: center;
 
+    }
+
+    .cards {
+        padding-left: 25px;
+        padding-right: 25px;
     }
 
     .card {

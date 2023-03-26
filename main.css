@@ -79,6 +79,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 10px;
+  padding-left: 25px;
 }
 .skills .skills__images .skills__image01 {
   grid-area: 1/1/2/2;
@@ -119,6 +120,10 @@
   color: #ff0028;
   padding-top: 60px;
   text-align: center;
+}
+.projects .cards {
+  padding-left: 25px;
+  padding-right: 25px;
 }
 .projects .card {
   margin-bottom: 30px;
