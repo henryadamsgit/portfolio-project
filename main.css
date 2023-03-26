@@ -144,7 +144,6 @@
 .projects .card__heading {
   margin-top: 10px;
   font-size: 1.5rem;
-  color: #ff0028;
 }
 .projects .card__buttons {
   display: flex;
@@ -188,7 +187,7 @@
   width: 60px;
 }
 
-@media screen and (min-width: 324px) {
+@media screen and (min-width: 426px) {
   .navbar {
     display: block;
     font-family: "Playfair Display";
@@ -237,5 +236,40 @@
     width: 264px;
     margin-left: 60px;
     margin-right: auto;
+  }
+  .container .aboutme .aboutme__heading {
+    font-size: 2rem;
+  }
+  .container .aboutme .aboutme_paragraph {
+    justify-self: right;
+  }
+  .skills .skills__heading {
+    font-size: 2rem;
+  }
+  .skills .skills__paragraph {
+    font-size: 1.2rem;
+  }
+  .skills .skills__images {
+    display: block;
+    padding-right: 25px;
+  }
+  .projects #projects {
+    font-size: 2rem;
+  }
+  .projects .cards {
+    padding-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+  .footer {
+    display: flex;
+  }
+  .footer p.footer__email {
+    font-size: 1.5rem;
+  }
+  .footer img.footer__icons {
+    height: 30px;
+    width: 30px;
   }
 }/*# sourceMappingURL=main.css.map */

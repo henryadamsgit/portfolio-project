@@ -175,7 +175,6 @@
         &__heading {
             margin-top: 10px;
             font-size: 1.5rem;
-            color: $color-secondary;
         }
 
         &__buttons {
@@ -235,7 +234,7 @@
 }
 
 
-@media screen and (min-width: 324px) {
+@media screen and (min-width: 426px) {
     .navbar {
         display: block;
         font-family: $font-primary;
@@ -273,7 +272,6 @@
             padding-left: 30px;
             padding-top: 10px;
         }
-
         .header__picture{
             display: block;
             margin-left: auto;
@@ -294,34 +292,51 @@
                 margin-left: 60px;
                 margin-right: auto;
             }
-    
-
             .aboutme__heading {
+                font-size: 2rem;
             }
-
             .aboutme_paragraph {
-    
+                justify-self: right;
             }
-            
-
-
-
         }
     }
 
     .skills {
 
+        .skills__heading {
+            font-size: 2rem;
+        }
+        .skills__paragraph {
+            font-size: 1.2rem;
+        }
+        .skills__images {
+            display: block;
+            padding-right: 25px;
+        }
     }
 
     .projects {
 
-    }
-
-    .cards {
-
+        #projects {
+            font-size: 2rem;
+        }
+        .cards {
+            padding-top: 40px;
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            gap: 20px;
+        }
     }
 
     .footer {
-        
+        display: flex;
+        p.footer__email {
+            font-size: 1.5rem;
+        }
+        img.footer__icons {
+            height: 30px;
+            width: 30px;
+        }
+
     }
 }
