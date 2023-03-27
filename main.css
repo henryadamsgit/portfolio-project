@@ -1,10 +1,14 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&family=Playfair+Display:wght@500&family=Poppins:wght@300&family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&family=Playfair+Display:wght@500&family=Poppins:ital,wght@0,300;0,600;1,200&family=Roboto&display=swap");
 * {
   font-family: "Poppins";
   background-color: #fcfcfc;
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 .navbar {
@@ -42,6 +46,7 @@
 .heading {
   color: #ff0028;
   font-size: 1.5rem;
+  font-weight: 600;
   display: flex;
   justify-content: center;
   text-align: center;
@@ -51,8 +56,23 @@
 img.profile {
   height: 412px;
   width: 299px;
-  padding-bottom: 40px;
+  padding-bottom: 10px;
   margin-left: 15px;
+}
+
+.steps {
+  padding-bottom: 80px;
+}
+.steps p {
+  font-weight: 600;
+}
+
+.italic {
+  padding-bottom: 80px;
+}
+.italic p {
+  font-size: 1rem;
+  font-style: italic;
 }
 
 .skills {
@@ -171,7 +191,7 @@ h6 {
   font-size: 12px;
   background-color: #000000;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
 }
 .footer p.footer__email {
@@ -188,6 +208,9 @@ h6 {
   width: 15px;
   border-radius: 30px;
 }
+.footer div a {
+  background-color: #000000;
+}
 .footer p.footer__bottom {
   background-color: #000000;
   color: #fcfcfc;
@@ -199,7 +222,7 @@ h6 {
 @media screen and (min-width: 426px) {
   .navbar {
     display: block;
-    font-family: "Playfair Display";
+    font-family: "Poppins";
     display: flex;
     justify-content: space-between;
     height: 40px;

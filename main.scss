@@ -1,5 +1,5 @@
 @use "./_variables.scss" as *;
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&family=Playfair+Display:wght@500&family=Poppins:wght@300&family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&family=Playfair+Display:wght@500&family=Poppins:ital,wght@0,300;0,600;1,200&family=Roboto&display=swap");
 
 * {
   font-family: "Poppins";
@@ -7,6 +7,10 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 .navbar {
@@ -46,6 +50,7 @@
 .heading {
   color: $color-secondary;
   font-size: 1.5rem;
+  font-weight: 600;
   display: flex;
   justify-content: center;
   text-align: center;
@@ -55,8 +60,24 @@
 img.profile {
   height: 412px;
   width: 299px;
-  padding-bottom: 40px;
+  padding-bottom: 10px;
   margin-left: 15px;
+}
+
+.steps {
+  padding-bottom: 80px;
+  p {
+    font-weight: 600;
+  }
+}
+
+.italic {
+  padding-bottom: 80px;
+
+  p {
+    font-size: 1rem;
+    font-style: italic;
+  }
 }
 
 .skills {
@@ -186,7 +207,7 @@ h6 {
   font-size: 12px;
   background-color: $color-primary;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
 
   p.footer__email {
@@ -203,6 +224,9 @@ h6 {
       height: 15px;
       width: 15px;
       border-radius: 30px;
+    }
+    a {
+      background-color: $color-primary;
     }
   }
 
