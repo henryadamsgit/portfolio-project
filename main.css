@@ -29,8 +29,8 @@
   font-size: 2.5rem;
   justify-content: center;
   align-items: center;
-  padding-top: 60px;
-  padding-bottom: 40px;
+  padding-top: 80px;
+  padding-bottom: 200px;
   margin-left: 30px;
 }
 .header .header__picture {
@@ -39,26 +39,20 @@
   margin-right: 20px;
 }
 
-.container {
-  color: #000000;
-  font-family: "Poppins";
-}
-.container .aboutme .aboutme__heading {
-  font-size: 1.5rem;
+.heading {
   color: #ff0028;
+  font-size: 1.5rem;
+  display: flex;
   justify-content: center;
-  align-items: center;
   text-align: center;
-  padding-right: 10px;
-  padding-top: 60px;
+  padding-bottom: 20px;
 }
-.container .aboutme .aboutme__picture img {
-  max-width: 100%;
-  height: auto;
+
+img.profile {
+  height: 412px;
+  width: 299px;
   padding-bottom: 40px;
-}
-.container .aboutme .aboutme_paragraph {
-  font-family: "Playfair Display";
+  margin-left: 15px;
 }
 
 .skills {
@@ -68,7 +62,7 @@
   font-family: "Poppins";
   font-size: 1.5rem;
   color: #ff0028;
-  padding-top: 60px;
+  padding-top: 200px;
 }
 .skills .skills__paragraph {
   font-size: 1rem;
@@ -111,12 +105,12 @@
 
 .projects {
   color: #000000;
-  padding-top: 60px;
-  padding-bottom: 30px;
+  padding-top: 200px;
+  padding-bottom: 20px;
 }
 .projects h4 {
   font-family: "Poppins";
-  font-size: 1.5rem;
+  font-size: 1.75rem;
   color: #ff0028;
   padding-top: 60px;
   text-align: center;
@@ -128,10 +122,14 @@
 .projects .card {
   margin-bottom: 30px;
 }
+.projects .card .card:hover {
+  opacity: 1;
+}
 .projects .card__img {
-  width: 100%;
-  height: auto;
-  padding-bottom: 40px;
+  width: 240px;
+  height: 270px;
+  padding-bottom: 20px;
+  padding-top: 40px;
 }
 .projects .card__text {
   line-height: 25px;
@@ -225,7 +223,7 @@ h6 {
     padding-bottom: 0;
   }
   .header {
-    padding-bottom: 100px;
+    padding-bottom: 80px;
   }
   .header .header__intro {
     padding-left: 30px;
@@ -239,20 +237,15 @@ h6 {
     justify-content: center;
     align-items: center;
   }
-  .container {
-    display: flex;
-  }
-  .container .aboutme .aboutme__picture {
-    height: 484px;
-    width: 264px;
-    margin-left: 60px;
-    margin-right: auto;
-  }
-  .container .aboutme .aboutme__heading {
+  .heading {
     font-size: 2rem;
   }
-  .container .aboutme .aboutme_paragraph {
-    justify-self: right;
+  img.profile {
+    height: 672px;
+    width: 488px;
+  }
+  .text {
+    font-size: 1.5rem;
   }
   .skills .skills__heading {
     font-size: 2rem;

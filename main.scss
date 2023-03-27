@@ -31,8 +31,8 @@
     font-size: 2.5rem;
     justify-content: center;
     align-items: center;
-    padding-top: 60px;
-    padding-bottom: 40px;
+    padding-top: 80px;
+    padding-bottom: 200px;
     margin-left: 30px;
   }
 
@@ -43,32 +43,20 @@
   }
 }
 
-.container {
-  color: $color-primary;
-  font-family: $font-secondary;
+.heading {
+  color: $color-secondary;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding-bottom: 20px;
+}
 
-  .aboutme {
-    .aboutme__heading {
-      font-size: 1.5rem;
-      color: $color-secondary;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      padding-right: 10px;
-      padding-top: 60px;
-    }
-
-    .aboutme__picture {
-      img {
-        max-width: 100%;
-        height: auto;
-        padding-bottom: 40px;
-      }
-    }
-    .aboutme_paragraph {
-      font-family: $font-primary;
-    }
-  }
+img.profile {
+  height: 412px;
+  width: 299px;
+  padding-bottom: 40px;
+  margin-left: 15px;
 }
 
 .skills {
@@ -78,7 +66,7 @@
     font-family: $font-secondary;
     font-size: 1.5rem;
     color: $color-secondary;
-    padding-top: 60px;
+    padding-top: 200px;
   }
 
   .skills__paragraph {
@@ -125,12 +113,11 @@
 
 .projects {
   color: $color-primary;
-  padding-top: 60px;
-  padding-bottom: 30px;
-
+  padding-top: 200px;
+  padding-bottom: 20px;
   h4 {
     font-family: $font-secondary;
-    font-size: 1.5rem;
+    font-size: 1.75rem;
     color: $color-secondary;
     padding-top: 60px;
     text-align: center;
@@ -143,11 +130,15 @@
 
   .card {
     margin-bottom: 30px;
+    .card:hover {
+      opacity: 1;
+    }
 
     &__img {
-      width: 100%;
-      height: auto;
-      padding-bottom: 40px;
+      width: 240px;
+      height: 270px;
+      padding-bottom: 20px;
+      padding-top: 40px;
     }
 
     &__text {
@@ -256,7 +247,7 @@ h6 {
   }
 
   .header {
-    padding-bottom: 100px;
+    padding-bottom: 80px;
     .header__intro {
       padding-left: 30px;
       padding-top: 10px;
@@ -271,23 +262,17 @@ h6 {
     }
   }
 
-  .container {
-    display: flex;
+  .heading {
+    font-size: 2rem;
+  }
 
-    .aboutme {
-      .aboutme__picture {
-        height: 484px;
-        width: 264px;
-        margin-left: 60px;
-        margin-right: auto;
-      }
-      .aboutme__heading {
-        font-size: 2rem;
-      }
-      .aboutme_paragraph {
-        justify-self: right;
-      }
-    }
+  img.profile {
+    height: 672px;
+    width: 488px;
+  }
+
+  .text {
+    font-size: 1.5rem;
   }
 
   .skills {
