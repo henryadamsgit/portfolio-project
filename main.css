@@ -144,16 +144,27 @@
 .projects .card__heading {
   margin-top: 10px;
   font-size: 1.5rem;
+  font-weight: bold;
 }
 .projects .card__buttons {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  padding-right: 60px;
 }
 .projects .card__button {
   text-decoration: none;
   background-color: #fcfcfc;
   height: 30px;
-  width: 100px;
+  width: 90px;
+  border: solid 1px;
+  border-radius: 5px;
+}
+
+h6 {
+  font-size: 1rem;
+  color: #ff0028;
+  text-align: center;
+  padding-bottom: 10px;
 }
 
 .footer {
@@ -261,6 +272,15 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
+  }
+  .projects .cards .card__buttons {
+    padding-right: 30px;
+  }
+  h6 {
+    font-size: 1.5rem;
+    color: #ff0028;
+    text-align: center;
+    padding-bottom: 20px;
   }
   .footer {
     display: flex;
