@@ -1,7 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&family=Playfair+Display:wght@500&family=Poppins:ital,wght@0,300;0,600;1,200&family=Roboto&display=swap");
 * {
   font-family: "Poppins";
-  background-color: #fcfcfc;
+  background-color: #121212;
+  color: #fcfcfc;
   box-sizing: border-box;
   padding: 0;
   margin: 0;
@@ -9,6 +10,19 @@
 
 html {
   scroll-behavior: smooth;
+}
+html a:link {
+  text-decoration: none;
+}
+html a:visited {
+  text-decoration: none;
+}
+html a:hover {
+  -webkit-text-decoration: red;
+          text-decoration: red;
+}
+html a:active {
+  text-decoration: none;
 }
 
 .navbar {
@@ -19,7 +33,7 @@ html {
   font-size: 1rem;
   font-family: "Poppins";
   font-weight: bolder;
-  color: #ff0028;
+  color: #87ceeb;
   padding-top: 50px;
   margin-left: 30px;
 }
@@ -28,7 +42,7 @@ html {
   display: flex;
 }
 .header .header__intro {
-  color: #000000;
+  color: #fcfcfc;
   font-family: "Poppins";
   font-size: 2.5rem;
   justify-content: center;
@@ -39,12 +53,10 @@ html {
 }
 .header .header__picture {
   display: none;
-  margin-left: 20px;
-  margin-right: 20px;
 }
 
 .heading {
-  color: #ff0028;
+  color: #87ceeb;
   font-size: 1.5rem;
   font-weight: 600;
   display: flex;
@@ -81,7 +93,7 @@ img.profile {
 .skills .skills__heading {
   font-family: "Poppins";
   font-size: 1.5rem;
-  color: #ff0028;
+  color: #87ceeb;
   padding-top: 200px;
 }
 .skills .skills__paragraph {
@@ -89,6 +101,7 @@ img.profile {
   padding-top: 20px;
 }
 .skills .skills__images {
+  color: #fcfcfc;
   padding-top: 20px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -124,14 +137,14 @@ img.profile {
 }
 
 .projects {
-  color: #000000;
+  color: #fcfcfc;
   padding-top: 200px;
   padding-bottom: 20px;
 }
 .projects h4 {
   font-family: "Poppins";
   font-size: 1.75rem;
-  color: #ff0028;
+  color: #87ceeb;
   padding-top: 60px;
   text-align: center;
 }
@@ -160,6 +173,7 @@ img.profile {
   font-weight: bold;
 }
 .projects .card__heading {
+  color: #87ceeb;
   margin-top: 10px;
   font-size: 1.5rem;
   font-weight: bold;
@@ -171,7 +185,7 @@ img.profile {
 }
 .projects .card__button {
   text-decoration: none;
-  background-color: #fcfcfc;
+  background-color: #121212;
   height: 30px;
   width: 90px;
   border: solid 1px;
@@ -180,7 +194,7 @@ img.profile {
 
 h6 {
   font-size: 1rem;
-  color: #ff0028;
+  color: #87ceeb;
   text-align: center;
   padding-bottom: 10px;
 }
@@ -189,19 +203,19 @@ h6 {
   height: 150px;
   width: 100%;
   font-size: 12px;
-  background-color: #000000;
+  background-color: #87ceeb;
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
 .footer p.footer__email {
-  background-color: #000000;
+  background-color: #87ceeb;
   color: #fcfcfc;
   font-size: 0.75rem;
-  opacity: 0.8;
+  opacity: 1;
 }
 .footer div {
-  background-color: #000000;
+  background-color: #87ceeb;
 }
 .footer div .footer__icons {
   height: 15px;
@@ -209,10 +223,10 @@ h6 {
   border-radius: 30px;
 }
 .footer div a {
-  background-color: #000000;
+  background-color: #87ceeb;
 }
 .footer p.footer__bottom {
-  background-color: #000000;
+  background-color: #87ceeb;
   color: #fcfcfc;
   font-size: 0.75rem;
   opacity: 0.8;
@@ -235,9 +249,10 @@ h6 {
   }
   .navbar .navbar__right {
     scroll-behavior: smooth;
+    font-weight: 600;
   }
   .navbar .navbar__right .navbar__get-in-touch {
-    border: solid 1px #000000;
+    border: solid 1px #121212;
     border-radius: 10px;
     padding: 10px;
   }
@@ -259,6 +274,7 @@ h6 {
     height: 300px;
     justify-content: center;
     align-items: center;
+    padding-right: 30px;
   }
   .heading {
     font-size: 2rem;
@@ -294,7 +310,7 @@ h6 {
   }
   h6 {
     font-size: 1.5rem;
-    color: #ff0028;
+    color: #87ceeb;
     text-align: center;
     padding-bottom: 20px;
   }

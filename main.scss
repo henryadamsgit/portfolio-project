@@ -2,8 +2,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&family=Playfair+Display:wght@500&family=Poppins:ital,wght@0,300;0,600;1,200&family=Roboto&display=swap");
 
 * {
-  font-family: "Poppins";
-  background-color: $color-third;
+  font-family: $font-primary;
+  background-color: $color-primary;
+  color: $color-third;
   box-sizing: border-box;
   padding: 0;
   margin: 0;
@@ -11,6 +12,18 @@
 
 html {
   scroll-behavior: smooth;
+  a:link {
+    text-decoration: none;
+  }
+  a:visited {
+    text-decoration: none;
+  }
+  a:hover {
+    text-decoration: red;
+  }
+  a:active {
+    text-decoration: none;
+  }
 }
 
 .navbar {
@@ -19,7 +32,7 @@ html {
 
 .greeting {
   font-size: 1rem;
-  font-family: $font-secondary;
+  font-family: $font-primary;
   font-weight: bolder;
   color: $color-secondary;
   padding-top: 50px;
@@ -30,8 +43,8 @@ html {
   display: flex;
 
   .header__intro {
-    color: $color-primary;
-    font-family: $font-secondary;
+    color: $color-third;
+    font-family: $font-primary;
     font-size: 2.5rem;
     justify-content: center;
     align-items: center;
@@ -42,8 +55,6 @@ html {
 
   .header__picture {
     display: none;
-    margin-left: 20px;
-    margin-right: 20px;
   }
 }
 
@@ -84,7 +95,7 @@ img.profile {
   text-align: center;
 
   .skills__heading {
-    font-family: $font-secondary;
+    font-family: $font-primary;
     font-size: 1.5rem;
     color: $color-secondary;
     padding-top: 200px;
@@ -96,6 +107,7 @@ img.profile {
   }
 
   .skills__images {
+    color: $color-third;
     padding-top: 20px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -133,11 +145,11 @@ img.profile {
 }
 
 .projects {
-  color: $color-primary;
+  color: $color-third;
   padding-top: 200px;
   padding-bottom: 20px;
   h4 {
-    font-family: $font-secondary;
+    font-family: $font-primary;
     font-size: 1.75rem;
     color: $color-secondary;
     padding-top: 60px;
@@ -173,6 +185,7 @@ img.profile {
     }
 
     &__heading {
+      color: $color-secondary;
       margin-top: 10px;
       font-size: 1.5rem;
       font-weight: bold;
@@ -185,7 +198,7 @@ img.profile {
     }
     &__button {
       text-decoration: none;
-      background-color: $color-third;
+      background-color: $color-primary;
       height: 30px;
       width: 90px;
       border: solid 1px;
@@ -205,20 +218,20 @@ h6 {
   height: 150px;
   width: 100%;
   font-size: 12px;
-  background-color: $color-primary;
+  background-color: $color-secondary;
   display: flex;
   justify-content: space-around;
   align-items: center;
 
   p.footer__email {
-    background-color: $color-primary;
+    background-color: $color-secondary;
     color: $color-third;
     font-size: 0.75rem;
-    opacity: 0.8;
+    opacity: 1;
   }
 
   div {
-    background-color: $color-primary;
+    background-color: $color-secondary;
 
     .footer__icons {
       height: 15px;
@@ -226,12 +239,12 @@ h6 {
       border-radius: 30px;
     }
     a {
-      background-color: $color-primary;
+      background-color: $color-secondary;
     }
   }
 
   p.footer__bottom {
-    background-color: $color-primary;
+    background-color: $color-secondary;
     color: $color-third;
     font-size: 0.75rem;
     opacity: 0.8;
@@ -256,6 +269,7 @@ h6 {
 
     .navbar__right {
       scroll-behavior: smooth;
+      font-weight: 600;
 
       .navbar__get-in-touch {
         border: solid 1px $color-primary;
@@ -283,6 +297,7 @@ h6 {
       height: 300px;
       justify-content: center;
       align-items: center;
+      padding-right: 30px;
     }
   }
 
