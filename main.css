@@ -361,7 +361,7 @@ h6 {
     flex-direction: row;
   }
   .footer p.footer__email {
-    font-size: 1.5rem;
+    font-size: 1rem;
   }
   .footer img.footer__icons {
     height: 40px;
@@ -371,7 +371,7 @@ h6 {
     font-size: 1rem;
   }
 }
-@media screen and (max-width: 1440px) {
+@media screen and (min-width: 1439px) {
   .heading2 {
     font-size: 3rem;
     margin-right: 625px;
@@ -379,10 +379,10 @@ h6 {
   .italic {
     margin-right: 605px;
   }
-  .text {
-    font-size: 2rem;
-  }
   .footer {
     padding-left: 180px;
+  }
+  .footer p.footer__email {
+    font-size: 2rem;
   }
 }/*# sourceMappingURL=main.css.map */
