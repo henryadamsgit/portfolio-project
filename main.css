@@ -38,8 +38,7 @@ html a:active {
   font-size: 2.5rem;
   justify-content: center;
   align-items: center;
-  padding-top: 80px;
-  padding-bottom: 200px;
+  padding: 80px 0px 200px 0px;
   margin-left: 30px;
 }
 .header .header__picture {
@@ -97,16 +96,13 @@ html a:active {
 
 .projects {
   color: #fcfcfc;
-  padding-top: 200px;
-  padding-bottom: 20px;
-  padding-left: 40px;
+  padding: 200px 0px 20px 40px;
 }
 .projects h4 {
   font-family: "Poppins";
   font-size: 1.75rem;
   color: #87ceeb;
-  padding-top: 60px;
-  padding-left: 40px;
+  padding: 60px 0px 0px 40px;
 }
 .projects .cards {
   padding-right: 25px;
@@ -120,8 +116,7 @@ html a:active {
 .projects .card__img {
   width: 240px;
   height: 270px;
-  padding-bottom: 20px;
-  padding-top: 40px;
+  padding: 40px 0px 20px 0px;
 }
 .projects .card__text {
   line-height: 25px;
@@ -140,8 +135,7 @@ html a:active {
 .projects .card__buttons {
   display: flex;
   justify-content: space-between;
-  padding-right: 60px;
-  padding-top: 15px;
+  padding: 15px 60px 0px 0px;
 }
 .projects .card__button {
   text-decoration: none;
@@ -213,16 +207,14 @@ img.profile {
 }
 
 .steps {
-  padding-bottom: 80px;
-  padding-left: 15px;
+  padding: 0px 0px 80px 15px;
 }
 .steps p {
   font-weight: 600;
 }
 
 .italic {
-  padding-bottom: 80px;
-  padding-left: 15px;
+  padding: 0px 0px 80px 15px;
 }
 .italic p {
   font-size: 1rem;
@@ -240,7 +232,7 @@ h6 {
   padding-bottom: 10px;
 }
 
-@media screen and (min-width: 426px) {
+@media screen and (min-width: 321px) {
   .navbar {
     display: block;
     font-family: "Poppins";
@@ -248,7 +240,7 @@ h6 {
     justify-content: space-between;
     height: 40px;
     width: 100%;
-    padding: 20px 10px 100px 10px;
+    padding: 20px 10px 200px 10px;
   }
   .navbar .navbar__name {
     font-size: 1.5rem;
@@ -259,9 +251,10 @@ h6 {
     font-weight: 600;
   }
   .navbar .navbar__right .navbar__get-in-touch {
-    border: solid 1px #121212;
+    color: #87ceeb;
+    border: solid 1px #fcfcfc;
     border-radius: 10px;
-    padding: 10px;
+    padding: 5px 5px 5px 5px;
   }
   .greeting {
     padding: 30px;
@@ -271,8 +264,7 @@ h6 {
     padding-bottom: 150px;
   }
   .header .header__intro {
-    padding-left: 30px;
-    padding-top: 10px;
+    padding: 10px 30px 0px 0px;
   }
   .header .header__picture {
     display: block;

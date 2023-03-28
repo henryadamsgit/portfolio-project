@@ -1,5 +1,9 @@
 @use "./variables" as *;
 
+.navbar {
+  display: none;
+}
+
 .header {
   display: flex;
 
@@ -9,8 +13,7 @@
     font-size: 2.5rem;
     justify-content: center;
     align-items: center;
-    padding-top: 80px;
-    padding-bottom: 200px;
+    padding: 80px 0px 200px 0px;
     margin-left: 30px;
   }
 
@@ -74,15 +77,13 @@
 
 .projects {
   color: $color-third;
-  padding-top: 200px;
-  padding-bottom: 20px;
-  padding-left: 40px;
+  padding: 200px 0px 20px 40px;
+
   h4 {
     font-family: $font-primary;
     font-size: 1.75rem;
     color: $color-secondary;
-    padding-top: 60px;
-    padding-left: 40px;
+    padding: 60px 0px 0px 40px;
   }
 
   .cards {
@@ -98,8 +99,7 @@
     &__img {
       width: 240px;
       height: 270px;
-      padding-bottom: 20px;
-      padding-top: 40px;
+      padding: 40px 0px 20px 0px;
     }
 
     &__text {
@@ -122,8 +122,7 @@
     &__buttons {
       display: flex;
       justify-content: space-between;
-      padding-right: 60px;
-      padding-top: 15px;
+      padding: 15px 60px 0px 0px;
     }
     &__button {
       text-decoration: none;
