@@ -101,7 +101,8 @@
       font-size: 1.2rem;
     }
     .skills__images {
-      display: block;
+      display: flex;
+      justify-content: space-around;
       padding-right: 25px;
     }
   }
@@ -124,6 +125,7 @@
 
       .card__buttons {
         padding-right: 30px;
+        margin-right: 50px;
       }
     }
   }
@@ -148,5 +150,24 @@
     p.footer__bottom {
       font-size: 1rem;
     }
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .heading2 {
+    font-size: 3rem;
+    margin-right: 625px;
+  }
+
+  .italic {
+    margin-right: 605px;
+  }
+
+  .text {
+    font-size: 2rem;
+  }
+
+  .footer {
+    padding-left: 180px;
   }
 }
