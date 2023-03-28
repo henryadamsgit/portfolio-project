@@ -1,0 +1,56 @@
+@use "./variables" as *;
+
+.greeting {
+  color: $color-secondary;
+  font-size: 1rem;
+  font-family: $font-primary;
+  font-weight: bolder;
+  padding-top: 50px;
+  margin-left: 30px;
+}
+
+.heading {
+  color: $color-secondary;
+  font-size: 1.5rem;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+img.profile {
+  height: 412px;
+  width: 299px;
+  padding-bottom: 10px;
+  margin-left: 15px;
+}
+
+.steps {
+  padding-bottom: 80px;
+  padding-left: 15px;
+  p {
+    font-weight: 600;
+  }
+}
+
+.italic {
+  padding-bottom: 80px;
+  padding-left: 15px;
+
+  p {
+    font-size: 1rem;
+    font-style: italic;
+  }
+}
+
+.text {
+  padding-left: 15px;
+}
+
+h6 {
+  font-size: 1rem;
+  color: $color-secondary;
+  text-align: center;
+  padding-bottom: 10px;
+}

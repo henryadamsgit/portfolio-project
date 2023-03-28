@@ -1,0 +1,30 @@
+@use "./variables" as *;
+
+* {
+  font-family: $font-primary;
+  background-color: $color-primary;
+  color: $color-third;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  a:link {
+    text-decoration: none;
+  }
+  a:visited {
+    text-decoration: none;
+  }
+  a:hover {
+    text-decoration: red;
+  }
+  a:active {
+    text-decoration: none;
+  }
+}
+
+.navbar {
+  display: none;
+}

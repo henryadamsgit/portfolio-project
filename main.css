@@ -29,15 +29,6 @@ html a:active {
   display: none;
 }
 
-.greeting {
-  color: #87ceeb;
-  font-size: 1rem;
-  font-family: "Poppins";
-  font-weight: bolder;
-  padding-top: 50px;
-  margin-left: 30px;
-}
-
 .header {
   display: flex;
 }
@@ -53,44 +44,6 @@ html a:active {
 }
 .header .header__picture {
   display: none;
-}
-
-.heading {
-  color: #87ceeb;
-  font-size: 1.5rem;
-  font-weight: 600;
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  padding-bottom: 20px;
-}
-
-img.profile {
-  height: 412px;
-  width: 299px;
-  padding-bottom: 10px;
-  margin-left: 15px;
-}
-
-.steps {
-  padding-bottom: 80px;
-  padding-left: 15px;
-}
-.steps p {
-  font-weight: 600;
-}
-
-.italic {
-  padding-bottom: 80px;
-  padding-left: 15px;
-}
-.italic p {
-  font-size: 1rem;
-  font-style: italic;
-}
-
-.text {
-  padding-left: 15px;
 }
 
 .skills {
@@ -199,13 +152,6 @@ img.profile {
   border-radius: 5px;
 }
 
-h6 {
-  font-size: 1rem;
-  color: #87ceeb;
-  text-align: center;
-  padding-bottom: 10px;
-}
-
 .footer {
   height: 150px;
   width: 100%;
@@ -240,6 +186,60 @@ h6 {
   width: 60px;
 }
 
+.greeting {
+  color: #87ceeb;
+  font-size: 1rem;
+  font-family: "Poppins";
+  font-weight: bolder;
+  padding-top: 50px;
+  margin-left: 30px;
+}
+
+.heading {
+  color: #87ceeb;
+  font-size: 1.5rem;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+img.profile {
+  height: 412px;
+  width: 299px;
+  padding-bottom: 10px;
+  margin-left: 15px;
+}
+
+.steps {
+  padding-bottom: 80px;
+  padding-left: 15px;
+}
+.steps p {
+  font-weight: 600;
+}
+
+.italic {
+  padding-bottom: 80px;
+  padding-left: 15px;
+}
+.italic p {
+  font-size: 1rem;
+  font-style: italic;
+}
+
+.text {
+  padding-left: 15px;
+}
+
+h6 {
+  font-size: 1rem;
+  color: #87ceeb;
+  text-align: center;
+  padding-bottom: 10px;
+}
+
 @media screen and (min-width: 426px) {
   .navbar {
     display: block;
@@ -268,7 +268,7 @@ h6 {
     padding-bottom: 0;
   }
   .header {
-    padding-bottom: 80px;
+    padding-bottom: 150px;
   }
   .header .header__intro {
     padding-left: 30px;
