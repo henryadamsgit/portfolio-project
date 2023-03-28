@@ -199,6 +199,10 @@ html a:active {
   padding-bottom: 20px;
 }
 
+.heading2 {
+  display: none;
+}
+
 img.profile {
   height: 412px;
   width: 299px;
@@ -276,7 +280,16 @@ h6 {
     padding-right: 30px;
   }
   .heading {
-    font-size: 2rem;
+    display: none;
+  }
+  .heading2 {
+    color: #87ceeb;
+    font-size: 2.5rem;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 20px;
   }
   img.profile {
     height: 672px;
@@ -326,5 +339,14 @@ h6 {
   .footer img.footer__icons {
     height: 30px;
     width: 30px;
+  }
+  .about-me {
+    display: flex;
+  }
+  .about-me .right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 }/*# sourceMappingURL=main.css.map */
