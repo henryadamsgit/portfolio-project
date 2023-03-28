@@ -31,10 +31,10 @@ html {
 }
 
 .greeting {
+  color: $color-secondary;
   font-size: 1rem;
   font-family: $font-primary;
   font-weight: bolder;
-  color: $color-secondary;
   padding-top: 50px;
   margin-left: 30px;
 }
@@ -77,6 +77,7 @@ img.profile {
 
 .steps {
   padding-bottom: 80px;
+  padding-left: 15px;
   p {
     font-weight: 600;
   }
@@ -84,11 +85,16 @@ img.profile {
 
 .italic {
   padding-bottom: 80px;
+  padding-left: 15px;
 
   p {
     font-size: 1rem;
     font-style: italic;
   }
+}
+
+.text {
+  padding-left: 15px;
 }
 
 .skills {
@@ -148,16 +154,16 @@ img.profile {
   color: $color-third;
   padding-top: 200px;
   padding-bottom: 20px;
+  padding-left: 40px;
   h4 {
     font-family: $font-primary;
     font-size: 1.75rem;
     color: $color-secondary;
     padding-top: 60px;
-    text-align: center;
+    padding-left: 40px;
   }
 
   .cards {
-    padding-left: 25px;
     padding-right: 25px;
   }
 
@@ -195,6 +201,7 @@ img.profile {
       display: flex;
       justify-content: space-between;
       padding-right: 60px;
+      padding-top: 15px;
     }
     &__button {
       text-decoration: none;
@@ -330,6 +337,11 @@ h6 {
   .projects {
     #projects {
       font-size: 2rem;
+    }
+
+    h4 {
+      text-align: center;
+      padding-right: 100px;
     }
     .cards {
       padding-top: 40px;
