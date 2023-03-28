@@ -64,7 +64,7 @@ html a:active {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 10px;
-  padding-left: 25px;
+  padding-left: 15px;
 }
 .skills .skills__images .skills__image01 {
   grid-area: 1/1/2/2;
@@ -152,21 +152,22 @@ html a:active {
   font-size: 12px;
   background-color: #87ceeb;
   display: flex;
+  flex-direction: column-reverse;
   justify-content: space-around;
   align-items: center;
 }
 .footer p.footer__email {
   background-color: #87ceeb;
   color: #fcfcfc;
-  font-size: 0.75rem;
+  font-size: 1rem;
   opacity: 1;
 }
 .footer div {
   background-color: #87ceeb;
 }
 .footer div .footer__icons {
-  height: 15px;
-  width: 15px;
+  height: 25px;
+  width: 25px;
   border-radius: 30px;
 }
 .footer div a {
@@ -176,7 +177,7 @@ html a:active {
   background-color: #87ceeb;
   color: #fcfcfc;
   font-size: 0.75rem;
-  opacity: 0.8;
+  opacity: 1;
   width: 60px;
 }
 
@@ -218,11 +219,12 @@ img.profile {
 }
 
 .italic {
-  padding: 0px 0px 80px 15px;
+  padding: 0px 0px 80px 0px;
 }
 .italic p {
   font-size: 1rem;
   font-style: italic;
+  padding-left: 15px;
 }
 
 .text {
@@ -263,6 +265,7 @@ h6 {
   .greeting {
     padding: 30px;
     padding-bottom: 0;
+    font-size: 1.3rem;
   }
   .header {
     padding-bottom: 150px;
@@ -279,6 +282,15 @@ h6 {
     align-items: center;
     padding-right: 30px;
   }
+  .about-me {
+    display: flex;
+  }
+  .about-me .right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
   .heading {
     display: none;
   }
@@ -287,19 +299,28 @@ h6 {
     font-size: 2.5rem;
     font-weight: 600;
     display: flex;
-    justify-content: center;
-    text-align: center;
-    padding-bottom: 20px;
+    justify-content: flex-start;
+    padding-bottom: 50px;
+    margin-right: 250px;
   }
   img.profile {
     height: 672px;
     width: 488px;
   }
-  .text {
+  .italic {
+    margin-right: 175px;
+    padding-bottom: 10px;
+  }
+  .italic p {
     font-size: 1.5rem;
   }
+  .text {
+    font-size: 1.35rem;
+    padding-left: 40px;
+  }
   .skills .skills__heading {
-    font-size: 2rem;
+    font-size: 2.5rem;
+    padding-top: 100px;
   }
   .skills .skills__paragraph {
     font-size: 1.2rem;
@@ -308,8 +329,11 @@ h6 {
     display: block;
     padding-right: 25px;
   }
+  .projects {
+    padding-top: 200px;
+  }
   .projects #projects {
-    font-size: 2rem;
+    font-size: 2.5rem;
   }
   .projects h4 {
     text-align: center;
@@ -325,28 +349,23 @@ h6 {
     padding-right: 30px;
   }
   h6 {
-    font-size: 1.5rem;
+    font-size: 2rem;
     color: #87ceeb;
     text-align: center;
     padding-bottom: 20px;
   }
   .footer {
     display: flex;
+    flex-direction: row;
   }
   .footer p.footer__email {
     font-size: 1.5rem;
   }
   .footer img.footer__icons {
-    height: 30px;
-    width: 30px;
+    height: 40px;
+    width: 40px;
   }
-  .about-me {
-    display: flex;
-  }
-  .about-me .right {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  .footer p.footer__bottom {
+    font-size: 1rem;
   }
 }/*# sourceMappingURL=main.css.map */
